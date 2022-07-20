@@ -20,6 +20,7 @@ class Monster(animation.AnimateSprite):
         self.loot_amount = 10
 
     def set_loot_amount(self, amount):
+        "defining an amount to loot from a monster"
         self.loot_amount = amount
 
     def set_speed(self, speed):
