@@ -12,7 +12,11 @@ class Comet(pygame.sprite.Sprite):
         super().__init__()
         # definir l'image associee a cette comete
         self.image = pygame.image.load(
+<<<<<<< HEAD
             "assets/assets/comet.png"
+=======
+            "C:/Users/dedea/Dropbox/PC/Downloads/My works/my python games(try)/assets/assets/comet.png"
+>>>>>>> e8b06d02043617852b91b517f90d293595c53d37
         )
         self.rect = self.image.get_rect()
         self.velocity = random.randint(1, 5)
