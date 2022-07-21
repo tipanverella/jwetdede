@@ -1,6 +1,6 @@
 "main game module"
-# pylint: disable=wildcard-import, no-member, unused-import
-
+# pylint: disable=wildcard-import, no-member, unused-import, import-error
+from random import randint
 import pygame
 from player import Player
 from game import Game
@@ -15,10 +15,8 @@ FPS = 80
 pygame.display.set_caption("Falling Comets")
 screen = pygame.display.set_mode((1360, 738))
 
-# importer/charger l'arriere plan
-background = pygame.image.load(
-    "assets/assets/bg.jpg"
-)
+# importer et charger l'arriere plan
+background = f"assets/assets/bg{randint(1,2)}.jpg"
 
 # charger la baniere
 banner = pygame.image.load(
