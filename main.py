@@ -17,31 +17,16 @@ screen = pygame.display.set_mode((1360, 738))
 
 # importer/charger l'arriere plan
 background = pygame.image.load(
-<<<<<<< HEAD
     "assets/assets/bg.jpg"
-=======
-    "C:/Users/dedea/Dropbox/PC/Downloads/My works/my python games(try)/assets/assets/bg.jpg"
->>>>>>> e8b06d02043617852b91b517f90d293595c53d37
 )
 
 # charger la baniere
 banner = pygame.image.load(
-<<<<<<< HEAD
     "assets/assets/banner.png"
-=======
-    "C:/Users/dedea/Dropbox/PC/Downloads/My works/my python games(try)/assets/assets/banner.png"
->>>>>>> e8b06d02043617852b91b517f90d293595c53d37
 )
-banner = pygame.transform.scale(banner, (800, 760))
-banner_rect = banner.get_rect()
-
 # charger notre blouton pour lancer la partie
 play_button = pygame.image.load(
-<<<<<<< HEAD
     "assets/assets/button.png"
-=======
-    "C:/Users/dedea/Dropbox/PC/Downloads/My works/my python games(try)/assets/assets/button.png"
->>>>>>> e8b06d02043617852b91b517f90d293595c53d37
 )
 play_button = pygame.transform.scale(play_button, (400, 200))
 play_button_rect = play_button.get_rect()
