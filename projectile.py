@@ -13,11 +13,7 @@ class Projectile(pygame.sprite.Sprite):
         self.player = player
         self.game = game
         self.image = pygame.image.load(
-<<<<<<< HEAD
             "assets/assets/projectile.png"
-=======
-            "C:/Users/dedea/Dropbox/PC/Downloads/My works/my python games(try)/assets/assets/projectile.png"
->>>>>>> e8b06d02043617852b91b517f90d293595c53d37
         )
         self.image = pygame.transform.scale(self.image, (50, 50))
         self.rect = self.image.get_rect()
