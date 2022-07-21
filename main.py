@@ -62,7 +62,7 @@ while RUNNING:
         # appliquer le bouton de lancement du jeu
         screen.blit(play_button, (460, 550))
         # appliquer la baniere
-        screen.blit(banner, (250, 0))
+        screen.blit(banner, (250, -80))
 
     # mettre a jour l'ecran
     pygame.display.flip()
