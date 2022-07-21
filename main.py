@@ -1,6 +1,6 @@
 "main game module"
 # pylint: disable=wildcard-import, no-member, unused-import, import-error
-from random import randint
+
 import pygame
 from player import Player
 from game import Game
@@ -17,7 +17,7 @@ screen = pygame.display.set_mode((1360, 738))
 
 # importer/charger l'arriere plan
 background = pygame.image.load(
-    f"assets/assets/bg{randint(1,2)}.jpg"
+    "assets/assets/bg.jpg"
 )
 
 # charger la baniere
