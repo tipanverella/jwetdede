@@ -14,11 +14,7 @@ class AnimateSprite(pygame.sprite.Sprite):
         "initialiser la classe"
         super().__init__()
         self.image = pygame.image.load(
-<<<<<<< HEAD
             f"assets/assets/{sprite_name}.png"
-=======
-            f"C:/Users/dedea/Dropbox/PC/Downloads/My works/my python games(try)/assets/assets/{sprite_name}.png"
->>>>>>> e8b06d02043617852b91b517f90d293595c53d37
         )
         self.image = pygame.transform.scale(self.image, size)
         self.current_image = 0
@@ -58,11 +54,7 @@ def load_animation_images(sprite_name):
     # charger les images de ce sprie dans le dossier correspondant
     images = []
     # recuperer le chemin du dossier pour se sprite
-<<<<<<< HEAD
     path = f"assets/assets/{sprite_name}/{sprite_name}"
-=======
-    path = f"C:/Users/dedea/Dropbox/PC/Downloads/My works/my python games(try)/assets/assets/{sprite_name}/{sprite_name}"
->>>>>>> e8b06d02043617852b91b517f90d293595c53d37
 
     # boucler sur chaque image du dossier
     for num in range(1, 24):
