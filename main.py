@@ -15,8 +15,10 @@ FPS = 80
 pygame.display.set_caption("Falling Comets")
 screen = pygame.display.set_mode((1360, 738))
 
-# importer et charger l'arriere plan
-background = f"assets/assets/bg{randint(1,2)}.jpg"
+# importer/charger l'arriere plan
+background = pygame.image.load(
+    f"assets/assets/bg{randint(1,2)}.jpg"
+)
 
 # charger la baniere
 banner = pygame.image.load(
