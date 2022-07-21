@@ -33,7 +33,7 @@ class Game:
         self.pressed = {}
 
     def start(self):
-        "start method for the game
+        "start method for the game"
         self.spawn_monsters(Mummy)
         self.spawn_monsters(Mummy)
         self.spawn_monsters(Alien)
