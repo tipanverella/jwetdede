@@ -1,6 +1,8 @@
 """
 _extended_summary_
 """
+# pylint: disable=import-error
+
 import pygame
 
 
