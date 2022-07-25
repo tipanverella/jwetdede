@@ -2,6 +2,7 @@
 # pylint: disable=wildcard-import, no-member, unused-import, import-error
 
 import pygame
+
 from player import Player
 from game import Game
 
@@ -16,18 +17,12 @@ pygame.display.set_caption("Falling Comets")
 screen = pygame.display.set_mode((1360, 738))
 
 # importer/charger l'arriere plan
-background = pygame.image.load(
-    "assets/assets/bg.jpg"
-)
+background = pygame.image.load("assets/assets/bg.jpg")
 
 # charger la baniere
-banner = pygame.image.load(
-    "assets/assets/banner.png"
-)
+banner = pygame.image.load("assets/assets/banner.png")
 # charger notre blouton pour lancer la partie
-play_button = pygame.image.load(
-    "assets/assets/button.png"
-)
+play_button = pygame.image.load("assets/assets/button.png")
 play_button = pygame.transform.scale(play_button, (400, 200))
 play_button_rect = play_button.get_rect()
 play_button_rect.x = 460
@@ -51,7 +46,7 @@ while RUNNING:
 
     # verifier si notre jeu a commence
     if game.is_playing:
-        
+
         # declencher les instructions de la partie
         game.update(screen)
 
