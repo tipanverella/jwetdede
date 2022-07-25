@@ -1,6 +1,17 @@
 """
     _summary_
 
+ce module est destine a pouvoir animer les instances mummy, player, et alien.
+Il dispose d'une classe qui herite de la classe 'Sprite' qui se trouve dans le module
+pygame, et de methodes et attributs tels que l'image, ou encore la methode 'animate',
+qui permettent de gerer l'animation generee en passant rapidement a lecran,
+des images successives.
+En appelant cette classe, il faudra lui fournir l'acces au nom de l'objet 'Sprite'
+qu'il devra aller chercher dans un dictionnaire dont il dispose les mots-cles et les
+valeurs correspondantes, et le parametre 'size' si vous voulez que votre 'Sprite'
+ait une dimension bien definie, le cas echeant il lui sera attribue des dimensions
+definies par defaut.
+
     _extended_summary_
 """
 # pylint: disable= import-error
@@ -15,9 +26,7 @@ class AnimateSprite(pygame.sprite.Sprite):
     def __init__(self, sprite_name, size=(200, 200)):
         "initialiser la classe"
         super().__init__()
-        self.image = pygame.image.load(
-            f"assets/assets/{sprite_name}.png"
-        )
+        self.image = pygame.image.load(f"assets/assets/{sprite_name}.png")
         self.image = pygame.transform.scale(self.image, size)
         self.current_image = 0
         self.images = animations.get(sprite_name)
